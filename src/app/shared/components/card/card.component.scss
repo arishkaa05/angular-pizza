@@ -1,0 +1,33 @@
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  min-height: 350px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  &__button {
+    margin-top: 15px;
+    background: #f6af47;
+    border: none; 
+    &:hover {
+      background: #f6af47cc;
+    }
+  }
+
+  &__ingredients {
+    text-align: center;
+  }
+} 

@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="info-block gap-20">
+    <div class="info-block__image-block">
+      <img class="info-block__image" src="./pizza_big.jpg" alt="pizza">
+    </div>
+    <div>
+      <div>
+        <h2 class="info-block__title">Самая вкусная пицца в мире<br>
+          <span class="info-block__title info-block__title-light">только в Pizza Cheff</span>
+        </h2>
+      </div>
+      <div class="grid-row-2 gap-20">
+        <ng-container *ngFor="let item of info">
+          <app-product-advantage [advantageName]="item.name" [advantageDescription]="item.description"
+            [advantageImage]="item.image"></app-product-advantage>
+
+        </ng-container>
+      </div>
+      <div class="info-block__button-block">
+      <a href="#pizza" (click)="scrollToPizza($event)">
+        <button class="button info-block__button">Выбрать пиццы</button>
+      </a>
+    </div>
+    </div>
+  </div>
+</div>

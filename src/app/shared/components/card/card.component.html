@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card__image-container">
+    <a data-fancybox="gallery" [href]="'./products/pizza-'+productId+'.jpg'">
+
+      <img [src]="'./products/pizza-'+productId+'.jpg'" class="product-image" [alt]="productName">
+    </a>
+
+  </div>
+  <h2 class="card__title">{{productName }}</h2>
+  <div class="card__ingredients">{{ingredients.join(', ')}}</div>
+  <button (click)="addToCart()" class="button card__button">В корзину</button>
+</div>

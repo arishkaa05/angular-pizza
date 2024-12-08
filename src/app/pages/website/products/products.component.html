@@ -1,0 +1,12 @@
+<div class="container" id="pizza">
+  <h2 class="products__title">Выберите свою любимую пиццы</h2>
+  <ng-container *ngIf="products.length !== 0">
+    <div class="grid-row-4 gap-20">
+      <div class="" *ngFor="let product of products">
+        <product-card [productId]="product.id" [productName]="product.name" [ingredients]="product.ingredients"
+          (addProductToCart)="addToCart(product)">
+        </product-card>
+      </div>
+    </div>
+  </ng-container> 
+</div>
